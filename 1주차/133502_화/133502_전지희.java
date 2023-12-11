@@ -17,6 +17,7 @@ class Solution {
                 stack.pop();
             }
         }
+        
         return answer;
     }
 }
