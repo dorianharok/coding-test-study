@@ -19,8 +19,9 @@ public class 삼총사 {
 			.flatMap(i -> IntStream.range(i + 1, number.length - 1)
 				.boxed()
 				.flatMap(j -> IntStream.range(j + 1, number.length)
-					.filter(k -> i != j && i != k && j != k)
-					.mapToObj(k -> new int[] {number[i], number[j], number[k]})))
+					.boxed()
+					.filter(k -> !i.equals(j) && !i.equals(k) && !j.equals(k))
+					.map(k -> new int[] {number[i], number[j], number[k]})))
 			.filter(ints -> Arrays.stream(ints).sum() == 0)
 			.count();
 	}
