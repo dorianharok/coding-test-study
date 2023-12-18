@@ -10,8 +10,7 @@ class Solution {
             babbling[i] = babbling[i].replace("ye", " ");
             babbling[i] = babbling[i].replace("woo", " ");
             babbling[i] = babbling[i].replace("ma", " ");
-            babbling[i] = babbling[i].replace(" ", "");
-            if(babbling[i].isEmpty()) cnt++;
+            if(babbling[i].isBlank()) cnt++;
         }
         return cnt;
     }
