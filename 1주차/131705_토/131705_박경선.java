@@ -6,9 +6,9 @@ class Solution {
             for(int j=i+1; j< number.length; j++){
                 n += number[j];
                 for(int k=j+1; k<number.length; k++){
-                    n += number[k];
-                    if(n==0) result++;
-                    n -= number[k];
+                   if (number[i] + number[j] + number[k] == 0) {
+                        result++;
+                    }
                 }
                 n-=number[j];
             }
