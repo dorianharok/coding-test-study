@@ -17,7 +17,7 @@ class Solution {
             for (int j = 0; j < board.length; j++) {
                 if (board[j][moves[i]-1] != 0) {
                     if (!bascket.isEmpty() && bascket.peek() == board[j][moves[i]-1]) {
-                        board[j][moves[i]-1] = 0;
+                        board[j][moves[i]-1] = 0; // if else문 밖으로 빼도 됨
                         // System.out.println("pop: " + bascket.peek());
                         bascket.pop();
                         cnt += 2;
@@ -25,7 +25,7 @@ class Solution {
                     } else {
                         bascket.push(board[j][moves[i]-1]);
                         // System.out.println("push: " + board[j][moves[i]-1]);
-                        board[j][moves[i]-1] = 0;
+                        board[j][moves[i]-1] = 0; // if else문 밖으로 빼도 됨
                         break;
                     }
                 }
