@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/금_12954" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/금_42840" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/금_42889" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/목_12982" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/목_77884" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/목_81301" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/수_12915" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/수_77484" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/수_82612" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/월_147355" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/월_161990" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/월_172928" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/일_12934" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/일_17682" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/일_42576" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/토_178871" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/토_1845" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/토_67256" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/화_12930" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/화_135808" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/화_68644" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
