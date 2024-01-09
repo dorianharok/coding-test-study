@@ -47,6 +47,31 @@ class Solution {
 // Solution 2
 import java.util.*;
 class Solution {
+    public ArrayList<Integer> solution(String s) {
+        ArrayList<Integer> answer = new ArrayList<>();
+        String str[] = s.substring(2, s.length() - 2).replace("},{", "-").split("-");
+        Arrays.sort(str, new Comparator<String>() {
+            public int compare(String o1, String o2) {
+
+                return Integer.compare(o1.length(), o2.length());
+            }
+        });
+        for (String x : str) {
+            String[] temp = x.split(",");
+            for (int i = 0; i < temp.length; i++) {
+                int n = Integer.parseInt(temp[i]);
+                if (!answer.contains(n))
+                    answer.add(n);
+            }
+        }
+        return answer;
+    }
+}
+
+
+// Solution 3
+import java.util.*;
+class Solution {
     public int[] solution(String s) {
         Set<String> set = new HashSet<>();
         String[] arr = s.replaceAll("[{]", " ").replaceAll("[}]", " ").trim().split(" , ");
@@ -72,7 +97,7 @@ class Solution {
  */
 
 
-// Solution 3 => 정렬이 없어서 가장 빠름!
+// Solution 4 => 정렬이 없어서 가장 빠름!
 import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -106,7 +131,7 @@ class Solution {
  */
 
 
-// Solution 4
+// Solution 5
 import java.util.*;
 import java.util.stream.Stream;
 class Solution {
