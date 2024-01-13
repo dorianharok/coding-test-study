@@ -1,4 +1,4 @@
-import java.util.LinkedHashSet;
+import java.util.LinkedList;
 
 class Solution {
     public int solution(int cacheSize, String[] cities) {
@@ -8,7 +8,7 @@ class Solution {
             return cities.length * 5;
         }
 
-        LinkedHashSet<String> cache = new LinkedHashSet<>(cacheSize);
+        LinkedList<String> cache = new LinkedList<>();
 
         for (String city : cities) {
             city = city.toLowerCase();
@@ -20,7 +20,7 @@ class Solution {
             } else {
                 cache.add(city);
                 if (cache.size() > cacheSize) {
-                    cache.remove(cache.iterator().next());
+                    cache.removeFirst();
                 }
                 answer += 5;
             }
